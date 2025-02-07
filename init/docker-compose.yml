@@ -1,0 +1,8 @@
+services:
+  evidence-init:
+    image: evidence-init
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        progress: plain

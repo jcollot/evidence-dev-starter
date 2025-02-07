@@ -1,0 +1,18 @@
+services:
+  evidence-app:
+    image: evidence-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        progress: plain
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data/sources:/evidence/sources
+      - ./data/pages:/evidence/pages
+    container_name: evidence-app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      
