@@ -1,1 +1,2 @@
 evidence-init.tar.gz filter=lfs diff=lfs merge=lfs -text
+evidence-init.tar.gz.zip filter=lfs diff=lfs merge=lfs -text
